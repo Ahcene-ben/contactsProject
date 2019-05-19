@@ -10,6 +10,8 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+// test comment
+
 public interface ContactRepository extends JpaRepository<Contact, Long>{
 
 	@Query("select c from Contact c where c.nom like :x")
